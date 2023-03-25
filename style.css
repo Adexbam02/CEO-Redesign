@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --firstColor: #00795b;
+    --secondColor: #02e12c;
+    --thirdColor: #fefefe;
+
+    --shadow1: 2px 3px 5px rgba(31, 31, 31, 0.144);
+    --shadow2: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    --transition: all 300ms ease;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    /* padding: 0 7rem; */
+}
+
+.btn{
+    display: inline-block;
+    background: var(--firstColor);
+    color: var(--thirdColor);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    /* transition: var(--color-white); */
+}
+
+.btn:hover{
+    background: transparent;
+    color: var(--firstColor);
+    border-color: var(--firstColor);
+}
+
+/* titleH2 */
+.secondHero h2,
+.procedure h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--firstColor);
+    margin-bottom: 2rem;
+    display: block;
+}
+
+/* ===== LOGO ===== */
+.navBar .logo img,
+footer img{
+    width: 4rem;
+}
+
+/* ==================== NAVBAR ==================== */
+nav .navBar{
+    background: var(--thirdColor);
+    height: 4.2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* ===== MAIN LINK ===== */
+.mainLink{
+    display: flex;
+    align-items: center;
+    /* gap: 1.5rem; */
+}
+
+.mainLink li a{
+    color: var(--secondColor);
+    font-weight: 500;
+
+    padding: 1.5rem 1.4rem;
+
+    transition: var(--transition);
+}
+
+.mainLink li a:hover{
+    background: #00795b15;
+    
+}
+
+/* ===== SIDELINK ===== */
+.sideLink{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.sideLink li a{
+    color: var(--secondColor);
+    font-weight: 500;
+}
+
+.sideLink li .signUp{
+    background: #00795b;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.2rem;
+    width: 9rem;
+    
+}
+/* ==================== HEROSECTION ==================== */
+.hero{
+    
+    padding: 5rem 7rem 0rem 7rem;
+
+    width: 100%;
+    height: 100vh;
+    background:url(./assets/white-wave-bg.svg) center bottom -0.5px / 100% 14% no-repeat scroll padding-box border-box, 
+    linear-gradient(60deg, var(--firstColor), var(--secondColor)) 0% 0% / auto repeat scroll padding-box border-box rgb(82, 67, 170);
+}
+
+.hero .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero .right{
+    color: var(--thirdColor);
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.hero .right form{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.2rem;
+
+}
+
+.hero .right form input{
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.3rem;
+    padding: 1rem 3.3rem;
+
+    cursor: pointer;
+}
+
+.hero .right form input:first-child{
+    background: transparent;
+    border: solid 2px var(--thirdColor);
+    transition: all 400ms ease-in-out;
+}
+
+.hero .right form input:first-child:hover{
+    background: var(--firstColor);
+    color: var(--thirdColor);
+    border: solid 2px var(--firstColor);
+} 
+
+.hero .right form input:last-child{
+    background: var(--firstColor);
+    transition: all 400ms ease-in-out;
+
+}
+
+.hero .right form input:last-child:hover{
+    background: transparent;
+    border: solid 2px var(--thirdColor);
+
+}
+
+/* HEROLEFT */
+.hero .left .container{
+    
+}
+
+.hero .left img{
+    width: 30rem;
+}
+
+/* ==================== SECONDHERO ==================== */
+.secondHero{
+    /* background: red; */
+    height: 100%;
+
+    display: flex;
+
+    padding: 1rem 7rem 0rem 7rem;
+
+}
+
+
+
+
+.secondHero .post{
+    display: flex;
+    gap: 1rem;
+}
+
+.secondHero .left{
+    /* background: red; */
+    width: 40rem;
+    height: 40rem;
+
+    border-radius: 20px;
+}
+
+.secondHero .left swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 20px;
+
+}
+
+/* RIGHT */
+.secondHero .right{
+    width: 100%;
+    /* height: 100%; */
+    /* background: rgb(0, 255, 179); */
+
+}
+
+.secondHero .right .testimonialCont{
+    /* background: red; */
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.testimonialCont article .testimonial{
+    width: 100%;
+    height: 8rem;
+    /* background: #00795b; */
+    padding: 1rem;
+
+    border-radius: 15px;
+
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    place-items: center;
+    background: var(--thirdColor);
+    box-shadow: var(--shadow1);
+
+    transition: var(--transition);
+}
+
+/* I want to change the background of 2nd testimonial */
+
+.testimonialCont article .testimonial:hover{
+    scale: 1.02;
+}
+
+.testimonial .profilePic{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testimonial p{
+    font-size: 15px;
+    font-weight: 400;
+}
+/* profileName */
+
+
+/* ================= PROCEDURE ================= */
+.procedure{
+    height: 60vh;
+    height: 60dvh;
+
+    background: var(--thirdColor);
+
+    padding: 0rem 7rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.procedure .container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+
+}
+
+.procedure .container h2{
+    margin-bottom: 1rem;
+}
+
+.procedure .container div{
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: nowrap;
+
+}
+
+.procedure .container div article{
+    box-shadow: var(--shadow2);
+    border-radius: 15px;
+    padding: 1rem;
+
+    width: 16rem;
+    height: 16rem;
+
+    /* transition: all 400ms ease; */
+    transform: translateZ(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.procedure .container div article:hover{
+    /* scale: 1.01; */
+    transform: scale(1.03);
+}
+
+.procedure span{
+    /* background: red; */
+}
+
+.procedure span i{
+    color: var(--firstColor);
+    font-size: 2rem;
+}
+
+.procedure h3{
+    color: var(--firstColor);
+    margin-bottom: 7px;
+}
+
+.procedure p::selection{
+    /* color: transparent; */
+}
+
+/* .procedure .container article::before{
+    background: black;
+
+    height: 20rem;
+    width: 20px;
+
+    top: 13;
+} */
+
+/* ================= FOOTER ================= */
+footer{
+    background: rgb(37, 37, 37);
+
+    height: 35vh;
+    width: 100%;
+
+    padding: 1rem 7rem;
+
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    gap: 2rem;
+    color: var(--thirdColor);
+}
+
+footer .container .left img{margin-bottom: 0.6rem;}
+
+footer .container .left .social{
+    display: flex;
+    gap: 0.5rem;
+}
+footer .container .left .social a{
+    color: var(--thirdColor);
+    font-size: 1.3rem;
+}
+
+footer h2{margin-bottom: 0.6rem;}
+
+footer .middle a{color: var(--thirdColor);}
+
+footer .right {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .right a{
+    color: var(--thirdColor);
+    margin-bottom: 0.3rem;
+}

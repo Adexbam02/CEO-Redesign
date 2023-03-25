@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --firstColor: #00795b;
+    --secondColor: #02e12c;
+    --thirdColor: #fefefe;
+
+    --shadow1: 2px 3px 5px rgba(31, 31, 31, 0.144);
+
+    --transition: all 300ms ease;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.container{
+    /* padding: 0 7rem; */
+}
+
+/* =============== SIGN UP ============== */
+.signSect{
+    height: 100vh;
+
+    background:url(./assets/white-wav-bg.svg) center bottom -0.5px / 100% 14% no-repeat scroll padding-box border-box,  
+    linear-gradient(60deg, var(--firstColor), var(--secondColor)) 0% 0% / auto repeat scroll padding-box border-box rgb(82, 67, 170);
+    padding: 6rem 7rem 2rem 7rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.signSect .container{
+    height: 32rem;
+    width: 42rem;
+
+    border-radius: 30px;
+    padding: 1.5rem ;
+
+    background: rgb(245, 245, 245);
+    box-shadow: var(--shadow1);
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.signLeft{
+    /* background: red; */
+
+    border-radius: 30px 0px 0px 30px;
+    /* padding: ; */
+
+}
+
+.signLeft h3{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--firstColor);
+
+    margin-bottom: 2rem;
+}
+
+.signLeft .google{
+    margin-bottom: 1.5rem;
+}
+
+.signLeft .google h5{
+    color: red;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+}
+
+.signLeft .google button{
+    border-radius: 8px;
+    border: solid 1px rgba(241, 241, 241, 0.13);
+    box-shadow: var(--shadow1);
+
+}
+
+.signLeft .google button a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3rem;
+
+    padding: 0.3rem 0.6rem;
+
+    font-size: 9px;
+    font-weight: 500;
+    color: rgba(15, 15, 15, 0.801);
+
+}
+
+.signLeft .google img{
+    width: 25px;
+}
+
+.formName{
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.6rem; */
+}
+
+.formName input,
+.numEmail input{
+    height: 2.7rem;
+    width: 11rem;
+
+    border-radius: 8px;
+    padding: 0.8rem;
+    margin-bottom: 0.6rem;
+
+    box-shadow: var(--shadow2);
+    
+}
+
+.numEmail input{
+    height: 2.7rem;
+    width: 15rem;
+}
+
+.signupForm label{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    margin-bottom: 0.5rem;
+}
+
+.signupForm label a{
+    font-size: 0.8rem;
+}
+
+.signRight{
+    /* background: black; */
+
+    border-radius: 0px 30px 30px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signRight img{
+    width: 27rem;
+}
